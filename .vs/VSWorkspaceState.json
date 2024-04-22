@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ECommerceClient",
+    "\\ECommerceClient\\.angular",
+    "\\ECommerceClient\\src",
+    "\\ECommerceClient\\src\\app"
   ],
   "PreviewInSolutionExplorer": false
 }
