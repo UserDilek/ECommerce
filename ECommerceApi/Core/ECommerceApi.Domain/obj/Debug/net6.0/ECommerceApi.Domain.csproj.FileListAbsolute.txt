@@ -1,0 +1,11 @@
+C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Core\ECommerceApi.Domain\bin\Debug\net6.0\ECommerceApi.Domain.deps.json
+C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Core\ECommerceApi.Domain\bin\Debug\net6.0\ECommerceApi.Domain.dll
+C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Core\ECommerceApi.Domain\bin\Debug\net6.0\ECommerceApi.Domain.pdb
+C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Core\ECommerceApi.Domain\obj\Debug\net6.0\ECommerceApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Core\ECommerceApi.Domain\obj\Debug\net6.0\ECommerceApi.Domain.AssemblyInfoInputs.cache
+C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Core\ECommerceApi.Domain\obj\Debug\net6.0\ECommerceApi.Domain.AssemblyInfo.cs
+C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Core\ECommerceApi.Domain\obj\Debug\net6.0\ECommerceApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Core\ECommerceApi.Domain\obj\Debug\net6.0\ECommerceApi.Domain.dll
+C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Core\ECommerceApi.Domain\obj\Debug\net6.0\refint\ECommerceApi.Domain.dll
+C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Core\ECommerceApi.Domain\obj\Debug\net6.0\ECommerceApi.Domain.pdb
+C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Core\ECommerceApi.Domain\obj\Debug\net6.0\ref\ECommerceApi.Domain.dll

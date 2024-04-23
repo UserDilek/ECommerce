@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "p5Mp13W6ryxxNsawlReWKmwqFyMoo7EBoCgDtdQ/LtLN8himiA4q2T7HJ7I0CT5Kagjy4iiI/kJoh6W4O64Iig==",
+  "dgSpecHash": "06PDyMgTPCQ+nrQ8lwD50HCvQ9uOyTPMh3enK1jF3BJpnx5cU4mHUZq77ff1le2Svza4CVhvPmyQP6Z1JvolQg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ozgur\\source\\repos\\ECommerce\\ECommerceApi\\Presentation\\ECommerceApi.API\\ECommerceApi.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
     "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\ozgur\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\ozgur\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",

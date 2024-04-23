@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "ECommerceApi.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ECommerceApi.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerceApi.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ECommerceApi.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ECommerceApi.Domain/ECommerceApi.Domain.csproj",
+      "msbuildProject": "../ECommerceApi.Domain/ECommerceApi.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "ECommerceApi.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ozgur\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ozgur\\source\\repos\\ECommerce\\ECommerceApi\\Core\\ECommerceApi.Domain\\ECommerceApi.Domain.csproj": {
+              "projectPath": "C:\\Users\\ozgur\\source\\repos\\ECommerce\\ECommerceApi\\Core\\ECommerceApi.Domain\\ECommerceApi.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
