@@ -5,10 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ECommerceApi.Application.Abstraction
+namespace ECommerceApi.Application.Repositories
 {
-    public interface IProductService
+    public interface ICustomerReadRepository:IReadRepository<Customer>
     {
-        public List<Product> GetProducts();
     }
 }
