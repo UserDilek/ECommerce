@@ -1,4 +1,5 @@
 ﻿using ECommerceApi.Application.Repositories;
+using ECommerceApi.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerceApi.API.Controllers
@@ -9,7 +10,7 @@ namespace ECommerceApi.API.Controllers
     {
         private readonly IProductWriteRepository _productWriteService;
         private readonly IProductReadRepository _productReadService;
-        public ProductController(IProductWriteRepository productWriteService,IProductReadRepository productReadService)
+        public ProductController(IProductWriteRepository productWriteService, IProductReadRepository productReadService)
         {
             _productWriteService = productWriteService;
             _productReadService = productReadService;
@@ -27,7 +28,7 @@ namespace ECommerceApi.API.Controllers
                 });
             await _productWriteService.SaveChangesAsync();
 
-            return Ok(); 
+            return Ok();
         }
         [HttpGet]
         [Route("getAllProduct")]
@@ -37,5 +38,31 @@ namespace ECommerceApi.API.Controllers
             return Ok(products);
         }
 
+        [HttpGet("/{id}")]
+        public async Task<IActionResult> GetProductById(string id)
+        {
+            var product = await _productReadService.GetByIdAsync(id);
+            return Ok(product);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddProduct(Product product) /// core model aslında burda kullanımaz. BUnun yerine viewmodel yada o kulanılırç
+        {
+            await _productWriteService.AddAsync(product);
+            await _productWriteService.SaveChangesAsync();
+
+            return Ok(product);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateProducts(Product product) /// core model aslında burda kullanımaz. BUnun yerine viewmodel yada o kulanılırç
+        {
+            var prdct = await _productReadService.GetByIdAsync(product.Id.ToString());
+            prdct.Stock = product.Stock;
+            prdct.Price = product.Price;
+            await _productWriteService.SaveChangesAsync();
+            return Ok(product);
+        }
+
     }
-}   
+}
