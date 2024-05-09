@@ -4,7 +4,7 @@
   "compilerOptions": {
     "outDir": "./out-tsc/app",
     "types": [
-      "node"
+      "node",
     ]
   },
   "files": [
@@ -14,5 +14,5 @@
   ],
   "include": [
     "src/**/*.d.ts"
-  ]
+  ],
 }
