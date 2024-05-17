@@ -1,6 +1,15 @@
 ﻿using ECommerceApi.Application.Repositories;
 using ECommerceApi.Domain.Entities;
+using ECommerceApi.Application.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using ECommerceApi.Application.RequestParameters;
+using ECommerceApi.Application.Services;
+using MediatR;
+using ECommerceApi.Application.Features.Queries.GetAllProducts;
+using ECommerceApi.Application.Features.Queries.GetProductById;
+using ECommerceApi.Application.Features.Commands.Product.CreateProduct;
+using ECommerceApi.Application.Features.Commands.Product.UpdateProduct;
+using ECommerceApi.Application.Features.Commands.Product.RemoveProduct;
 
 namespace ECommerceApi.API.Controllers
 {
@@ -8,60 +17,58 @@ namespace ECommerceApi.API.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private readonly IProductWriteRepository _productWriteService;
-        private readonly IProductReadRepository _productReadService;
-        public ProductController(IProductWriteRepository productWriteService, IProductReadRepository productReadService)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IFileService _fileService;
+        private readonly IMediator _mediatr;
+        public ProductController(IWebHostEnvironment webHostEnvironment
+            , IFileService fileService, IMediator mediatr)
         {
-            _productWriteService = productWriteService;
-            _productReadService = productReadService;
+            _webHostEnvironment = webHostEnvironment;
+            _fileService = fileService;
+            _mediatr = mediatr;
         }
 
         [HttpGet]
-        [Route("/getProduct")]
-        public async Task<IActionResult> GetProduct()
+        public async Task<IActionResult> GetAllProducts([FromQuery] GetAllProductQueryRequest request)
         {
-            await _productWriteService.AddRangeAsync(new()
-                {
-                    new(){Id = Guid.NewGuid(), Name="Product 4" , Price=100 , Stock = 50 },
-                    new(){Id = Guid.NewGuid(), Name="Product 5" , Price=100 , Stock = 50 },
-                    new(){Id = Guid.NewGuid(), Name="Product 6" , Price=100 , Stock = 50 }
-                });
-            await _productWriteService.SaveChangesAsync();
-
-            return Ok();
-        }
-        [HttpGet]
-        [Route("getAllProduct")]
-        public IActionResult GetAllProducts()
-        {
-            var products = _productReadService.GetAll();
-            return Ok(products);
+            var response = await _mediatr.Send(request);
+            return Ok(response);
         }
 
         [HttpGet("/{id}")]
         public async Task<IActionResult> GetProductById(string id)
         {
-            var product = await _productReadService.GetByIdAsync(id);
-            return Ok(product);
+            var response = await _mediatr.Send(new GetProductByIdRequest() { Id = id });
+            return Ok(response);
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddProduct(Product product) /// core model aslında burda kullanımaz. BUnun yerine viewmodel yada o kulanılırç
+        public async Task<IActionResult> AddProduct(CreateProductRequest createProductRequest)
         {
-            await _productWriteService.AddAsync(product);
-            await _productWriteService.SaveChangesAsync();
 
-            return Ok(product);
+            await _mediatr.Send(createProductRequest);
+            return Ok();
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateProducts(Product product) /// core model aslında burda kullanımaz. BUnun yerine viewmodel yada o kulanılırç
+        public async Task<IActionResult> UpdateProducts(UpdateProductRequest updateProductRequest)
         {
-            var prdct = await _productReadService.GetByIdAsync(product.Id.ToString());
-            prdct.Stock = product.Stock;
-            prdct.Price = product.Price;
-            await _productWriteService.SaveChangesAsync();
-            return Ok(product);
+            await _mediatr.Send(updateProductRequest);
+            return Ok(updateProductRequest);
+        }
+
+        [HttpDelete("{Id}")]
+        public async Task<IActionResult> DeleteProduct([FromRoute] string id)
+        {
+            await _mediatr.Send(new RemoveProductRequest() { Id = id });
+            return Ok();
+        }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Upload(List<IFormFile> files)
+        {
+            var allFilesWithPaths = await _fileService.UploadAsync("resoruces\\product-images", Request.Form.Files);
+            return Ok();
         }
 
     }

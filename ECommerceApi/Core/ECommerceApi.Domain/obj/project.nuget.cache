@@ -1,8 +1,30 @@
 {
   "version": 2,
-  "dgSpecHash": "lgt6imthQNlKQmZ5fCQ7uSzJg0AbXOuAE4MM5r10lbOWLlbG70cDM18nSITH7SuB2XT/3eJ8+lnV5Z72NLtyXQ==",
+  "dgSpecHash": "YlBAJt6W5lA7xyWbV9EnzwsZM6IAe5nlTxvbw301ffCj9NhqmaLEzkeuvxXv76vGvTNlw3wAE2/1mbDnDIOSbQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ozgur\\source\\repos\\ECommerce\\ECommerceApi\\Core\\ECommerceApi.Domain\\ECommerceApi.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.30\\microsoft.aspnetcore.cryptography.internal.6.0.30.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.30\\microsoft.aspnetcore.cryptography.keyderivation.6.0.30.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.30\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.30.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.30\\microsoft.entityframeworkcore.6.0.30.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.30\\microsoft.entityframeworkcore.abstractions.6.0.30.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.30\\microsoft.entityframeworkcore.analyzers.6.0.30.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.30\\microsoft.entityframeworkcore.relational.6.0.30.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.extensions.identity.core\\6.0.30\\microsoft.extensions.identity.core.6.0.30.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.extensions.identity.stores\\6.0.30\\microsoft.extensions.identity.stores.6.0.30.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "C:\\Users\\ozgur\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

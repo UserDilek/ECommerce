@@ -12,7 +12,7 @@ export class AlertifyService {
   message(message:string,messageType:MessageType, position:Position){
     alertify.set('notifier','position',position);
 
-    alertify.success(message);
+    alertify.error(message);
 
   }
 

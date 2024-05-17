@@ -1,4 +1,5 @@
 C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Infrastructure\ECommerceApi.Persistence\bin\Debug\net6.0\ECommerceApi.Persistence.deps.json
+C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Infrastructure\ECommerceApi.Persistence\bin\Debug\net6.0\ECommerceApi.Persistence.runtimeconfig.json
 C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Infrastructure\ECommerceApi.Persistence\bin\Debug\net6.0\ECommerceApi.Persistence.dll
 C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Infrastructure\ECommerceApi.Persistence\bin\Debug\net6.0\ECommerceApi.Persistence.pdb
 C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Infrastructure\ECommerceApi.Persistence\bin\Debug\net6.0\ECommerceApi.Application.dll
@@ -14,6 +15,5 @@ C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Infrastructure\ECommerceApi.P
 C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Infrastructure\ECommerceApi.Persistence\obj\Debug\net6.0\ECommerceApi.Persistence.dll
 C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Infrastructure\ECommerceApi.Persistence\obj\Debug\net6.0\refint\ECommerceApi.Persistence.dll
 C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Infrastructure\ECommerceApi.Persistence\obj\Debug\net6.0\ECommerceApi.Persistence.pdb
-C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Infrastructure\ECommerceApi.Persistence\obj\Debug\net6.0\ref\ECommerceApi.Persistence.dll
-C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Infrastructure\ECommerceApi.Persistence\bin\Debug\net6.0\ECommerceApi.Persistence.runtimeconfig.json
 C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Infrastructure\ECommerceApi.Persistence\obj\Debug\net6.0\ECommerceApi.Persistence.genruntimeconfig.cache
+C:\Users\ozgur\source\repos\ECommerce\ECommerceApi\Infrastructure\ECommerceApi.Persistence\obj\Debug\net6.0\ref\ECommerceApi.Persistence.dll

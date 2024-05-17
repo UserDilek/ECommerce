@@ -1,0 +1,21 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Name</mat-label>
+    <input matInput #txtName placeholder="Name">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Stock</mat-label>
+    <input matInput #txtStock placeholder="Stock" value="0" type="number" min="0" >
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Price</mat-label>
+    <input matInput #txtPrice placeholder="Price" value="0" type="number" min="0">
+  </mat-form-field>
+
+  <button mat-flat-button color="primary" (click)="createProduct(txtName,txtStock,txtPrice)">Add Product</button>
+
+</form>
+
+<app-fileupload [options]="fileUploadOptions"></app-fileupload>

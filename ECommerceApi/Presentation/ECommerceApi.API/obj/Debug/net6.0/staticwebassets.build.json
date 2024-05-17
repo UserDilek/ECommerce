@@ -1,11 +1,54 @@
 {
   "Version": 1,
-  "Hash": "flY1BgLC0HdicLYVXWl8elXBuwO1xFlQiywxJF+9hSQ=",
+  "Hash": "szUxDRsF+rpD65H/V92xrludKJkVxAxjD+G6KL4s4jE=",
   "Source": "ECommerceApi.API",
   "BasePath": "_content/ECommerceApi.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "ECommerceApi.API\\wwwroot",
+      "Source": "ECommerceApi.API",
+      "ContentRoot": "C:\\Users\\ozgur\\source\\repos\\ECommerce\\ECommerceApi\\Presentation\\ECommerceApi.API\\wwwroot\\",
+      "BasePath": "_content/ECommerceApi.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\ozgur\\source\\repos\\ECommerce\\ECommerceApi\\Presentation\\ECommerceApi.API\\wwwroot\\resources\\product-images\\1560092800.jpg",
+      "SourceId": "ECommerceApi.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ozgur\\source\\repos\\ECommerce\\ECommerceApi\\Presentation\\ECommerceApi.API\\wwwroot\\",
+      "BasePath": "_content/ECommerceApi.API",
+      "RelativePath": "resources/product-images/1560092800.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resources\\product-images\\1560092800.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ozgur\\source\\repos\\ECommerce\\ECommerceApi\\Presentation\\ECommerceApi.API\\wwwroot\\resources\\product-images\\962598775.jpg",
+      "SourceId": "ECommerceApi.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ozgur\\source\\repos\\ECommerce\\ECommerceApi\\Presentation\\ECommerceApi.API\\wwwroot\\",
+      "BasePath": "_content/ECommerceApi.API",
+      "RelativePath": "resources/product-images/962598775.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resources\\product-images\\962598775.jpg"
+    }
+  ]
 }

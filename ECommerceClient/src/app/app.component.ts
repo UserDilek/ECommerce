@@ -4,8 +4,8 @@ import { HomeComponent } from './Components/UI/home/home.component';
 import { LayoutComponent } from './Components/Dashboard/layout/layout.component';
 import { RouterLink } from '@angular/router';
 import { AlertifyService,MessageType ,Position} from './services/admin/alertify.service';
-
-
+import { HttpClient } from '@angular/common/http';
+import { FileuploadModule } from './services/common/fileupload/fileupload.module';
 
 declare var $: any;
 declare var alertify:any;
@@ -15,7 +15,7 @@ declare var alertify:any;
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,HomeComponent,LayoutComponent,RouterLink],
-  providers:[AlertifyService],
+  providers:[AlertifyService,HttpClient,{ provide: 'baseUrl', useValue: 'https://localhost:7133/api' , multi:true }],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 
@@ -27,7 +27,7 @@ export class AppComponent  {
   dilek= 'Design by Dilek';
 
   ngOnInit(){
-    alertify.success("dilek");
+   // alertify.success("dilek");
   }
 }
 
